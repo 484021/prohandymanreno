@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Handyman Reno</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/1c9636cbe1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-top-bar">
+        <div class="cs-top-container">
+          <div class="cs-top-contact">
+            <a href="" class="cs-top-link">
+              <img
+                class="cs-link-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg"
+                alt="logo"
+                width="16"
+                height="16"
+                aria-hidden="true"
+                decoding="async"
+              />
+              Call us: +84 1985 33 999
+            </a>
+            <a href="" class="cs-top-link">
+              <img
+                class="cs-link-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg"
+                alt="logo"
+                width="20"
+                height="20"
+                aria-hidden="true"
+                decoding="async"
+              />
+              Opening hours: Mon - Sat: 8:00am To 9:00pm
+            </a>
+          </div>
+          <div class="cs-top-social">
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/" class="cs-logo" aria-label="back to home">
+          <img
+            src="/Cream and Red Orange Flat Illustrative Handyman Services Logo.png"
+            alt="logo"
+            width="197"
+            height="43"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="/" class="cs-li-link cs-active"> Home </a>
+              </li>
+              <li class="cs-li">
+                <a href="/services.html" class="cs-li-link"> Services </a>
+              </li>
+              <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+              <!-- <li class="cs-li cs-dropdown" tabindex="0">
+                <span class="cs-li-link">
+                  Services
+                  <img
+                    class="cs-drop-icon"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg"
+                    alt="dropdown icon"
+                    width="15"
+                    height="15"
+                    decoding="async"
+                    aria-hidden="true"
+                  />
+                </span>
+                <ul class="cs-drop-ul">
+                  <li class="cs-drop-li">
+                    <a href="" class="cs-li-link cs-drop-link">Housing</a>
+                  </li>
+                  <li class="cs-drop-li">
+                    <a href="" class="cs-li-link cs-drop-link">Food Banks</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Blog </a>
+              </li> -->
+              <li class="cs-li">
+                <a href="/contact.html" class="cs-li-link"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+      </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-264">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Services</span>
+          <h2 class="cs-title">What We Do</h2>
+          <p class="cs-text">
+            We are a full service construction company offering everything from
+            residential and commercial painting to full home remodels and new
+            home additions.
+          </p>
+          <a href="/portfolio.html" class="cs-button-solid">View Portfolio</a>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <h3 class="cs-h3">New Home Construction</h3>
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimages2.nyc3.digitaloceanspaces.com/Services/s1.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimages2.nyc3.digitaloceanspaces.com/Services/s1.jpg
+                "
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Services/s1.jpg"
+                alt="house"
+                width="275"
+                height="132"
+              />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <h3 class="cs-h3">Renovations</h3>
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimages2.nyc3.digitaloceanspaces.com/Services/s2.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimages2.nyc3.digitaloceanspaces.com/Services/s2.jpg
+                "
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Services/s2.jpg"
+                alt="stairs"
+                width="275"
+                height="132"
+              />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <h3 class="cs-h3">Additions</h3>
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimages2.nyc3.digitaloceanspaces.com/Services/s3.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimages2.nyc3.digitaloceanspaces.com/Services/s3.jpg
+                "
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Services/s3.jpg"
+                alt="bathroom"
+                width="275"
+                height="132"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Gallery                     -->
+    <!-- ============================================ -->
+
+    <section id="gallery-42">
+      <div class="cs-container">
+        <div class="cs-content">
+          <div class="cs-flex">
+            <span class="cs-topper">Our Portfolio</span>
+            <h2 class="cs-title">View Our Gallery</h2>
+          </div>
+          <div class="cs-flex">
+            <p class="cs-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              massa ut sed odio cursus. Malesuada scelerisque eget eu,
+              sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo
+              consectetur felis augue.
+            </p>
+            <a aria-label="view more pictures" href="" class="cs-link">
+              View More
+              <!-- SVG Arrow -->
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.84999C16.55 8.52999 16.01 8.75999 16.01 9.19999V11Z"
+                  fill="#14142B"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="cs-image-group">
+          <picture class="cs-picture cs-picture-1">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1-m.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg"
+              alt="formerly dress you people outside"
+              width="380"
+              height="271"
+            />
+          </picture>
+          <picture class="cs-picture cs-picture-2">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2-m.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg"
+              alt="formal dinner"
+              width="380"
+              height="271"
+            />
+          </picture>
+          <picture class="cs-picture cs-picture-3">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3-m.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3.jpg"
+              alt="formerly dress you people outside"
+              width="780"
+              height="582"
+            />
+          </picture>
+          <picture class="cs-picture cs-picture-4">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4-m.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4.jpg"
+              alt="recital"
+              width="780"
+              height="582"
+            />
+          </picture>
+          <picture class="cs-picture cs-picture-5">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5-m.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg"
+              alt="formal evening"
+              width="380"
+              height="271"
+            />
+          </picture>
+          <picture class="cs-picture cs-picture-6">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6-m.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg"
+              alt="formal dinner"
+              width="380"
+              height="271"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Steps                      -->
+    <!-- ============================================ -->
+
+    <section id="steps-1173">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Work Process</span>
+          <h2 class="cs-title">How To Get Started</h2>
+          <p class="cs-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            libero sint hic accusantium exercitationem, voluptatem officia
+            quaerat velit quis ullam?
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lightbulb-red.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Identify Issues</h3>
+            <p class="cs-item-text">
+              Extensible for web iterate process before meta services impact
+              with employee engagement strategies.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/puzzle-red.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Prepare Solution</h3>
+            <p class="cs-item-text">
+              Extensible for web iterate process before meta services impact
+              with employee engagement strategies.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gears-red.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Working On This</h3>
+            <p class="cs-item-text">
+              Extensible for web iterate process before meta services impact
+              with employee engagement strategies.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!--Tire Screech-->
+      <img
+        class="cs-graphic"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/tire-mark.svg"
+        alt="icon"
+        width="840"
+        height="357"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    CTA                       -->
+    <!-- ============================================ -->
+
+    <section id="cta-403">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Portfolio</span>
+          <h2 class="cs-title">Want to Work with Our Team?</h2>
+          <p class="cs-text">
+            We love what we do and we do it with passion. We value the
+            experimentation of the message and smart incentives.
+          </p>
+          <a href="" class="cs-button-solid">Read More</a>
+        </div>
+      </div>
+      <!--Background Image-->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cleaning2-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cleaning2.jpg"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cleaning2.jpg"
+          alt="cleaner"
+          width="1920"
+          height="660"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Footer                      -->
+    <!-- ============================================ -->
+
+    <footer id="footer-1390">
+      <div class="cs-container">
+        <div class="cs-top">
+          <a aria-label="go back to home" class="cs-logo" href="">
+            <img
+              class="cs-logo-img"
+              loading="lazy"
+              decoding="async"
+              src="/Cream and Red Orange Flat Illustrative Handyman Services Logo.png"
+              alt="logo"
+              width="209"
+              height="40"
+            />
+          </a>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <a href="" class="cs-link">Home</a>
+            </li>
+            <!-- <li class="cs-li">
+              <a href="" class="cs-link">About</a>
+            </li> -->
+            <li class="cs-li">
+              <a href="" class="cs-link">Services</a>
+            </li>
+            <!-- <li class="cs-li">
+              <a href="" class="cs-link">Blog</a>
+            </li> -->
+            <li class="cs-li">
+              <a href="" class="cs-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-bottom">
+          <!--Social-->
+          <ul class="cs-social">
+            <li class="cs-social-li">
+              <a
+                href=""
+                class="cs-social-link"
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="cs-social-icon cs-default"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg"
+                  alt="icon"
+                  loading="lazy"
+                  decoding="async"
+                  width="12"
+                  height="12"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li class="cs-social-li">
+              <a
+                href=""
+                class="cs-social-link"
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="cs-social-icon cs-default"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg"
+                  alt="icon"
+                  loading="lazy"
+                  decoding="async"
+                  width="12"
+                  height="12"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li class="cs-social-li">
+              <a
+                href=""
+                class="cs-social-link"
+                aria-label="instagram"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="cs-social-icon cs-default"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg"
+                  alt="icon"
+                  loading="lazy"
+                  decoding="async"
+                  width="12"
+                  height="12"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li class="cs-social-li">
+              <a
+                href=""
+                class="cs-social-link"
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="cs-social-icon cs-default"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg"
+                  alt="icon"
+                  loading="lazy"
+                  decoding="async"
+                  width="12"
+                  height="12"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+          <span class="cs-copyright">
+            © Copyright 2025 -
+            <a href="" class="cs-copyright-link">Handyman Reno</a>
+          </span>
+          <div class="cs-flex">
+            <a href="" class="cs-copyright-link">Privacy Policy</a>
+            <span class="cs-separater">|</span>
+            <a href="" class="cs-copyright-link">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
