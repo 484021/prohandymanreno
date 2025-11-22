@@ -1160,13 +1160,13 @@ body {
   #hero-1949 .cs-title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 5vw, 3.8125rem);
-    color: #ffffffff;
+    color: #1a1a1a;
     text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);
   }
   #hero-1949 .cs-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
-    color: #fff7ee; /* warm white */
+    color: #4a4a4a; /* warm white */
     text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.65);
   }
   #hero-1949 .cs-button-solid {
@@ -1288,6 +1288,18 @@ body {
 @media only screen and (min-width: 48rem) {
   #hero-1949 .cs-container {
     align-items: flex-start;
+  }
+  #hero-1949 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+    color: #ffffffff;
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);
+  }
+  #hero-1949 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #fff7ee; /* warm white */
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.65);
   }
   #hero-1949 .cs-content {
     text-align: left;
