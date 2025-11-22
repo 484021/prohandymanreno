@@ -1,0 +1,10 @@
+# Block Googlebot from a specific directory
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Allow all other crawlers full access
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://prohandymanreno.ca/sitemap.xml
